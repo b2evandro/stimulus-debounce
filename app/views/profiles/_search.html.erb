@@ -1,0 +1,17 @@
+<div class="mx-auto mt-5 max-w-2xl py-2 sm:py-0 mb-4 px-4 sm:px-6 lg:px-8">
+  <%= form_with url: profiles_path, method: :get, html: { class: "flex rounded-md", data:
+  {controller: 'hot-search', turbo_frame: 'search', action:
+  'keyup->hot-search#debouncedSearch'} } do |f| %>
+  <div class="relative flex ml-auto w-full focus-within:z-10">
+    <%= f.search_field :username, "autocomplete"=> "off", class: "w-full rounded-none rounded-l-md
+    border-gray-200 pr-10 focus:ring-cyan-500 sm:text-sm text-center", placeholder:
+    t('.filter_description') %>
+    <div
+      class="pointer-events-none absolute inset-y-0 right-1 flex items-center pl-3"
+    >
+      <%= heroicon "magnifying-glass", variant: :mini, options: { class:
+      "text-gray-400 h-5 w-5" } %>
+    </div>
+  </div>
+  <% end %>
+</div>

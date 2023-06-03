@@ -94,6 +94,8 @@ GEM
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    heroicon (1.0.0)
+      rails (>= 5.2)
     i18n (1.14.0)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.1.6)
@@ -284,6 +286,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  heroicon (~> 1.0)
   importmap-rails
   jbuilder
   pry-nav (~> 1.0)

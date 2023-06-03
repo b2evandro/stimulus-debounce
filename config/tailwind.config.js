@@ -5,6 +5,7 @@ module.exports = {
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
     './app/views/**/*',
+    './config/initializers/heroicon.rb',
   ],
   theme: {
     extend: {
