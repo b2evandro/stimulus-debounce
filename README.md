@@ -1,24 +1,50 @@
-# README
+# Stimulus Debounce
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Stimulus Debounce is a web application built with Ruby on Rails 7, Tailwind CSS, RSpec and StimulusJS. Its main feature is a Github interface to search profiles that utilizes the debounce functionality provided by StimulusJS.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+To install and run Stimulus Debounce, follow these steps:
 
-* System dependencies
+1. Clone the repository:
 
-* Configuration
+```sh
+git clone https://github.com/b2evandro/stimulus-debounce.git
+```
+2. Install the required gems:
 
-* Database creation
+```sh
+bundle install
+```
 
-* Database initialization
+3. Start the Rails server:
 
-* How to run the test suite
+```sh
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Open your web browser and navigate to http://localhost:3000.
 
-* Deployment instructions
+## Features
 
-* ...
+Stimulus Debounce provides the following features:
+
+* Github interface to search profiles
+* Debounce functionality provided by StimulusJS
+* Responsive design with Tailwind CSS
+* Comprehensive test suite using RSpec
+
+## Usage
+
+To use Stimulus Debounce, simply enter a search term into the search bar on the home page and press enter or click the search button. The search results will be displayed below the search bar. As you type, the debounce functionality provided by StimulusJS will delay the search request until a certain amount of time has passed without any additional keystrokes, improving the overall performance of the application.
+## Testing
+
+Stimulus Debounce has a comprehensive test suite built with RSpec. To run the tests, simply run the following command:
+
+```sh
+rspec
+```
+
+## License
+
+Stimulus Debounce is released under the [MIT License](https://opensource.org/licenses/MIT).
