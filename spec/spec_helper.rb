@@ -112,6 +112,7 @@ unless ENV['NO_COVERAGE']
     add_filter '/channels/application_cable/channel.rb'
 
     add_filter '/controllers/application_controller.rb'
+    add_filter '/jobs/'
     add_filter '/helpers/'
     add_filter '/mailers/'
     add_filter '/models/concerns/'
