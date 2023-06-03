@@ -61,6 +61,7 @@ group :development, :test do
   gem 'rubocop-rails', '~> 2.19'
   gem 'rubocop-rspec', '~> 2.20'
   gem 'simplecov', '~> 0.22.0'
+  gem 'webmock', '~> 3.18'
 end
 
 group :development do
@@ -78,3 +79,5 @@ end
 gem 'tailwindcss-rails', '~> 2.0'
 
 gem 'heroicon', '~> 1.0'
+
+gem 'faraday', '~> 2.7'

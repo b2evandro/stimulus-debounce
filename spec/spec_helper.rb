@@ -18,6 +18,7 @@
 require 'webmock/rspec'
 
 RSpec.configure do |config|
+  
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
@@ -94,6 +95,7 @@ RSpec.configure do |config|
   #   # as the one that triggered the failure.
   #   Kernel.srand config.seed
 end
+
 unless ENV['NO_COVERAGE']
   require 'simplecov'
 
@@ -106,6 +108,8 @@ unless ENV['NO_COVERAGE']
 
     add_filter '/assets/'
     add_filter '/models/application_record.rb'
+    add_filter '/channels/application_cable/connection.rb'
+    add_filter '/channels/application_cable/channel.rb'
 
     add_filter '/controllers/application_controller.rb'
     add_filter '/helpers/'

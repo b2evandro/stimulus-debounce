@@ -32,7 +32,7 @@ rescue ActiveRecord::PendingMigrationError => e
   abort e.to_s.strip
 end
 RSpec.configure do |config|
-  # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
+  # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures Rails.root.join('spec/fixtures')
   config.fixture_path = Rails.root.join('spec/fixtures')
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
@@ -55,7 +55,7 @@ RSpec.configure do |config|
   #     end
   #
   # The different available types are documented in the features, such as in
-  # https://rspec.info/features/6-0/rspec-rails
+  # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 
   # Filter lines from Rails gems in backtraces.
