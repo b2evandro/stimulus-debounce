@@ -1,0 +1,9 @@
+<%= turbo_frame_tag 'search' do %>
+  <% if params[:username].present? &&  user_data.blank? %>
+    <%= empty_state %>
+  <% elsif params[:username].present? %>
+    <div class="flex items-center justify-center w-full">
+      <pre><%= JSON.pretty_generate(user_data) %></pre>
+    </div>
+  <% end %> 
+<% end %>
