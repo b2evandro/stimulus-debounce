@@ -57,11 +57,15 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
-  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
-  # gem "rack-mini-profiler"
-
-  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'pry-nav', '~> 1.0'
+  gem 'pry-rails', '~> 0.3.9'
+  gem 'rails-controller-testing', '~> 1.0'
+  gem 'rspec-rails', '~> 6.0'
+  gem 'rubocop', '~> 1.50'
+  gem 'rubocop-rails', '~> 2.19'
+  gem 'rubocop-rspec', '~> 2.20'
+  gem 'simplecov', '~> 0.22.0'
 end
 
 group :test do
