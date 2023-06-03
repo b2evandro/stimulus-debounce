@@ -1,0 +1,8 @@
+en:
+  profiles:
+    index:
+      see_you_profile: Check all your data in one place on the HotGit page right now
+      see_you_profile_part_2:  Check your Github profile data. 
+      access_button: Click here to access
+    search: 
+      filter_description: 'Seach by username'
