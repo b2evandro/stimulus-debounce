@@ -1,6 +1,9 @@
 # Stimulus Debounce
 
 Stimulus Debounce is a web application built with Ruby on Rails 7, Tailwind CSS, RSpec and StimulusJS. Its main feature is a Github interface to search profiles that utilizes the debounce functionality provided by StimulusJS.
+![data](https://github.com/b2evandro/stimulus-debounce/assets/55710708/1ed3040b-4274-4206-87e3-776a6e19e9dc)
+![not_found_user](https://github.com/b2evandro/stimulus-debounce/assets/55710708/9c7a4089-e096-408b-9f95-6a235c61f884)
+
 
 ## Installation
 
