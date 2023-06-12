@@ -81,3 +81,5 @@ gem 'tailwindcss-rails', '~> 2.0'
 gem 'heroicon', '~> 1.0'
 
 gem 'faraday', '~> 2.7'
+
+gem "dockerfile-rails", ">= 1.4", :group => :development
